@@ -1,9 +1,60 @@
 #duckTitle{
     font-size: 30px;
-    margin: 0% 20% 0% 20%;
+    /* margin: 0% 20% 0% 20%; */
 }
 #duck{
-    margin: 0% 20% 0% 20%;
-    height: 600px;
-    display:flex;
+    /* margin: 0% 20% 0% 20%; */
+    height: 100%;
+    width:100%;
+}
+#chat{
+    height: 15%;
+    bottom: 0%;
+    left:0%;
+    right:0%;
+    position: absolute;
+    width:100%;
+}
+#chatWindow{
+    position:absolute;
+    bottom: 0%;
+    right: 5%;
+    background-color:white;
+    color:green;
+    width:300px;
+    height: 50%;
+    border:1px solid black;
+}
+#msgarea{
+    height:85%;
+    width:100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    left:0%;
+    right:0%;
+    position: absolute;
+}
+body{
+    overflow-y: hidden;
+}
+#txt{
+    width: 100%;
+    height:100%;
+    resize:none;
+    border:1px solid black;
+}
+.msg-send{
+    border: 1px solid black;
+    color:red;
+    background-color: black;
+    margin:2% 0% 2% 30%;
+    text-align: right;
+}
+.msg-rec{
+    border: 1px solid black;
+    color:cadetblue;
+    background-color: goldenrod;
+    margin:2% 30% 2% 0%;
+    text-align: left;
 }
