@@ -1,0 +1,9 @@
+#duckTitle{
+    font-size: 30px;
+    margin: 0% 20% 0% 20%;
+}
+#duck{
+    margin: 0% 20% 0% 20%;
+    height: 600px;
+    display:flex;
+}
