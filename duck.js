@@ -1,8 +1,12 @@
 // All js changes
 function appendMsg(event){
     var msg = document.getElementById("txt");
+    
     msg.onkeypress = function(event){
         // console.log(event.code);
+        if (msg.value.trim() === ""){
+            return;
+        }
     if(event.code == "Enter"){
         
         var vals=msg.value;
