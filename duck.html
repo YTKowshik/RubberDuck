@@ -20,7 +20,7 @@
         <div class="row" >
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
-                    <img id="duck" src="https://www.pngfind.com/pngs/m/111-1117259_rubber-duck-transparent-duck-hd-png-download.png" alt="Rubber Duck" >
+                    <img id="duck" src="duck.png" alt="Rubber Duck" >
                 </div>
                 <div class="col-md-3"></div>
         </div>
@@ -28,9 +28,10 @@
             <div class="col-md-3"></div>
             <div class="col-md-6"></div>
             <div class="col-md-3" id="chatWindow">
-                <div id="msgarea"></div>
+                <div id="chatHead"><span id="spn">Rubber Duck</span></div>
+                <div id="msgs"><div id="msgarea"></div></div>
                 <div id="chat">
-                    <textarea id="txt" aria-multiline="true" onkeypress="appendMsg();" ></textarea>
+                    <textarea id="txt" class="txtArea" multiline="true" placeholder="Enter your message here ....." onkeypress="appendMsg();"></textarea>
                 </div>
             </div>
         </div>

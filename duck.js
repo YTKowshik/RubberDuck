@@ -19,7 +19,8 @@ function appendMsg(event){
 
         chat.insertBefore(recMsg,null);
 
-        msg.value ='';
+        chat.scrollTop = chat.scrollHeight-chat.clientHeight;
+        msg.value ="";
         }
     };
 };

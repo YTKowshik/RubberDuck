@@ -4,7 +4,7 @@
 }
 #duck{
     /* margin: 0% 20% 0% 20%; */
-    height: 100%;
+    height: 70%;
     width:100%;
 }
 #chat{
@@ -26,35 +26,75 @@
     border:1px solid black;
 }
 #msgarea{
-    height:85%;
+    height: 100%;
     width:100%;
     overflow-y: scroll;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    position: absolute;
+}
+#msgs{
+    height:78%;
     left:0%;
     right:0%;
     position: absolute;
+    top:7%;
 }
 body{
     overflow-y: hidden;
+}
+.txtArea::placeholder{
+    color:Blue;
+    font-size: 1.5em;
+}
+.txtArea::-moz-placeholder{
+    color:Blue;
+    font-size: 1.5em;
 }
 #txt{
     width: 100%;
     height:100%;
     resize:none;
-    border:1px solid black;
+    border: none;
+    border-top:1px solid black;
+    color:black;
 }
 .msg-send{
     border: 1px solid black;
-    color:red;
-    background-color: black;
-    margin:2% 0% 2% 30%;
+    color:white;
+    background-color:rgb(0, 132, 255);
+    margin:3% 2% 3% 30%;
     text-align: right;
+    border-radius: 5px 5px 0px 5px;
+    font-size: medium;
+    padding: 1%;
 }
+
 .msg-rec{
     border: 1px solid black;
     color:cadetblue;
-    background-color: goldenrod;
-    margin:2% 30% 2% 0%;
+    background-color: transparent;
+    margin:3% 30% 3% 2%;
+    font-size:medium;   
     text-align: left;
+    border-radius: 5px 5px 5px 0px;
+    padding:1%;
+}
+#chatHead{
+    border: 1px solid black;
+    background-color: #428bca;
+    color:white;
+    font-weight: bold;
+    left:0%;
+    right:0%;
+    width:100%;
+    position: absolute;
+    height: 7%;
+    text-align:left;
+    display:table;
+}
+#spn
+{
+    display: table-cell;
+    vertical-align: middle;
 }
