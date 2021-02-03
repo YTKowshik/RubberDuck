@@ -44,12 +44,12 @@ body{
     overflow-y: hidden;
 }
 .txtArea::placeholder{
-    color:Blue;
-    font-size: 1.5em;
+    color:grey;
+    font-size: 1em;
 }
 .txtArea::-moz-placeholder{
-    color:Blue;
-    font-size: 1.5em;
+    color:grey;
+    font-size: 1em;
 }
 #txt{
     width: 100%;
