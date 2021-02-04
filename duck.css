@@ -93,12 +93,12 @@ body{
     text-align:left;
     display:table;
 }
-#spn
-{
+
+#spn {
     display: table-cell;
     text-align: left;
     vertical-align: middle;
-    width:80%;
+    width:60%;
     height:8%;
 }
 
@@ -115,3 +115,16 @@ body{
     background-color:white;
     border-radius: 50%;
 }
+
+#settings {
+    width: 20%;
+    height: 8%;
+    display: table-cell;
+    vertical-align: middle;
+    /*! right: 0%; *//*! position: relative; *//*! align-content: right; */
+   }
+.icons {
+margin: 5%;
+vertical-align: middle;
+}
+   

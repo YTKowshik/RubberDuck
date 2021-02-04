@@ -1,12 +1,14 @@
 // All js changes
-function appendMsg(event){
+function appendMsg(){
     var msg = document.getElementById("txt");
-    
+    var keyco = document.getElementById("codes");
     msg.onkeypress = function(event){
         // console.log(event.code);
         if (msg.value.trim() === ""){
+            keyco.innerText += event.code;
             return;
         }
+        keyco.innerText += event.code;
     if(event.code == "Enter"){
         
         var vals=msg.value;
@@ -27,4 +29,18 @@ function appendMsg(event){
         msg.value ="";
         }
     };
+};
+
+function openSettings(){
+
+};
+
+function collapseChat(){
+    var chatDiv=document.getElementById("msgs");
+    var txtDiv = document.getElementById("chat");
+    chatDiv.style.display="none";
+    txtDiv.style.display="none";
+    chatDiv.style.visibility='none';
+    txtDiv.style.visibility='none';
+    // document.getElementById("chatWindow").style.height="10%";
 };
