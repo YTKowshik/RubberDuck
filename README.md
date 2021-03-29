@@ -1,3 +1,3 @@
 # RubberDuck
 
-Talk to rubber duck **[here](https://ytkowshik.github.io/RubberDuck/duck.html)**.
+Talk to the rubber duck **[here](https://ytkowshik.github.io/RubberDuck/duck.html)**.
