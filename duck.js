@@ -32,15 +32,48 @@ function appendMsg(){
 };
 
 function openSettings(){
-
+    let settingsMenu=document.getElementById("settingsMenu");
+    if(settingsMenu.style.display=="none"){
+        settingsMenu.style.display="block";
+    }else{
+        settingsMenu.style.display="none";
+    }
 };
 
 function collapseChat(){
-   // var chatDiv=document.getElementById("msgs");
-    //var txtDiv = document.getElementById("chat");
-    //chatDiv.style.display="none";
-   // txtDiv.style.display="none";
-    //chatDiv.style.visibility='none';
-    //txtDiv.style.visibility='none';
-    // document.getElementById("chatWindow").style.height="10%";
+    let msgs=document.getElementById("msgs");
+    let chat = document.getElementById("chat");
+    let msgArea=document.getElementById("msgarea");
+    if(msgs.style.display=="none"){
+        msgs.style.display="block";
+    }else{
+        msgs.style.display="none";
+    }
+    if(chat.style.display=="none"){
+        chat.style.display="block";
+    }else{
+        chat.style.display="none";
+    }
+    if(msgArea.style.display=="none"){
+        msgArea.style.display="block";
+    }else{
+        msgArea.style.display="none";
+    }
 };
+
+
+var r = document.querySelector(':root');
+
+// Create a function for getting a variable value
+function myFunction_get() {
+  // Get the styles (properties and values) for the root
+  var rs = getComputedStyle(r);
+  // Alert the value of the --blue variable
+  alert("The value of --blue is: " + rs.getPropertyValue('--blue'));
+}
+
+// Create a function for setting a variable value
+function myFunction_set() {
+  // Set the value of variable --blue to another value (in this case "lightblue")
+  r.style.setProperty('--blue', 'lightblue');
+}
