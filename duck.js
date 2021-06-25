@@ -36,11 +36,11 @@ function openSettings(){
 };
 
 function collapseChat(){
-    var chatDiv=document.getElementById("msgs");
-    var txtDiv = document.getElementById("chat");
-    chatDiv.style.display="none";
-    txtDiv.style.display="none";
-    chatDiv.style.visibility='none';
-    txtDiv.style.visibility='none';
+   // var chatDiv=document.getElementById("msgs");
+    //var txtDiv = document.getElementById("chat");
+    //chatDiv.style.display="none";
+   // txtDiv.style.display="none";
+    //chatDiv.style.visibility='none';
+    //txtDiv.style.visibility='none';
     // document.getElementById("chatWindow").style.height="10%";
 };
