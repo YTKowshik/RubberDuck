@@ -1,16 +1,19 @@
 // All js changes
-function appendMsg(){
     var msg = document.getElementById("txt");
     var keyco = document.getElementById("codes");
-    msg.onkeypress = function(event){
-        // console.log(event.code);
+    msg.onkeyup = function(e){appendMsg(e);};
+
+    function appendMsg(event){
         if (msg.value.trim() === ""){
             keyco.innerText += event.code;
             return;
         }
         keyco.innerText += event.code;
     if(event.code == "Enter"){
-        
+        msgBuilder();
+        }
+    };
+function msgBuilder(){
         var vals=msg.value;
         var chat=document.getElementById("msgarea");
         var sendMsg = document.createElement('div');
@@ -27,9 +30,7 @@ function appendMsg(){
 
         chat.scrollTop = chat.scrollHeight-chat.clientHeight;
         msg.value ="";
-        }
-    };
-};
+}
 
 function openSettings(){
     let settingsMenu=document.getElementById("settingsMenu");
@@ -44,13 +45,14 @@ function collapseChat(){
     let msgs=document.getElementById("msgs");
     let chat = document.getElementById("chat");
     let msgArea=document.getElementById("msgarea");
+    let icoSend = document.getElementById("sendIcon");
     if(msgs.style.display=="none"){
         msgs.style.display="block";
     }else{
         msgs.style.display="none";
     }
     if(chat.style.display=="none"){
-        chat.style.display="block";
+        chat.style.display="flex";
     }else{
         chat.style.display="none";
     }
@@ -58,6 +60,11 @@ function collapseChat(){
         msgArea.style.display="block";
     }else{
         msgArea.style.display="none";
+    }
+    if(icoSend.style.display=="none"){
+        icoSend.style.display="block";
+    }else{
+        icoSend.style.display="none";
     }
 };
 

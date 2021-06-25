@@ -23,6 +23,8 @@
     left:0%;
     right:0%;
     position: absolute;
+    border-top:1px solid black;
+    display:flex;
     width:100%;
 }
 #chatWindow{
@@ -65,12 +67,17 @@ body{
     font-size: 1em;
 }
 #txt{
-    width: 100%;
+    width: 85%;
     height:100%;
     resize:none;
     border: none;
-    border-top:1px solid black;
     color:black;
+}
+#sendIcon{
+    align-content: center;
+    padding:4%;
+    width:15%;
+    height: 100%;
 }
 .msg-send{
     border: 1px solid black;
